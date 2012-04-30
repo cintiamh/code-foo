@@ -1,5 +1,16 @@
+/*********************************************
+ * 
+ * @author cintiahigashi
+ * email: cintiamh@gmail.com
+ * 
+ * Calculates the combination of letters and 
+ * numbers that produces the least number of 
+ * excess plates as possible given a population
+ * number.
+ * 
+ *********************************************/
+
 var pop_val;
-var outString;
 var result1, result2, result3, result4;
 
 $(document).ready(function() {
@@ -14,8 +25,6 @@ $(document).ready(function() {
 		submitHandler: function(form) {
 			pop_val = $("#population").val();
 			calculatePlates(pop_val);
-			//$("#result").text(outString);
-			//$("#result").text("");
 			$("#res_population").text(result1);
 			$("#res_pattern").text(result2);
 			$("#res_total").text(result3);
@@ -60,10 +69,6 @@ function calculatePlates(population) {
 			break;
 		}
 	}
-	outString = "Population: " + population + "\r\nPattern: " + minLetters + " letters, " + minNumbers + 
-			" numbers<br />/nTotal Plates: " + minTotal + "<br/>/nExcess Plates: " + minExcess;
-	//outString = "letters: " + minLetters + ", numbers: " + minNumbers
-		//	+ ", excess: " + minExcess;
 	result1 = "" + population;
 	result2 = "" + minLetters + " letters, " + minNumbers + " numbers";
 	result3 = "" + minTotal;
