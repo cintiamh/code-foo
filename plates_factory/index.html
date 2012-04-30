@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Learning HTML5</title>
+		<meta name="description" content="The HTML5 Herald">
+		<meta name="author" content="SitePoint">
+		<link rel="stylesheet" href="css/styles.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+		<script src="js/scripts.js"></script>
+		<form id="myform" method="post">
+			<label for="population">Enter your population number: </label>
+			<input class="left" id="population" name="population" />
+			<br/>
+			<input type="submit" value="Calculate!" />
+		</form>
+		<div id="result">
+			<p>Population: <span id="res_population"></span></p>
+			<p>Pattern: <span id="res_pattern"></span></p>
+			<p>Total Plates: <span id="res_total"></span></p>
+			<p>Excess Plates: <span id="res_excess"></span></p>
+		</div>
+	</body>
+</html>
